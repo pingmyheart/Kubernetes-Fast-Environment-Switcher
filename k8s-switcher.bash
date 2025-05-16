@@ -25,7 +25,7 @@ trap "signal_exit INT" INT
 readonly SCRIPT_LOCATION="~/programs/Kubernetes-Fast-Environment-Switcher"
 readonly PROGRAM_NAME=${0##*/}
 readonly PROGRAM_VERSION="1.0.0"
-readonly EXTERNAL_BINARIES="grep sed "
+readonly EXTERNAL_BINARIES="grep awk sort ls cat cmp sed tee"
 readonly is_number='^[0-9]+$'
 
 ### Var
