@@ -22,7 +22,7 @@ trap "signal_exit TERM" TERM HUP
 trap "signal_exit INT" INT
 
 ### Const
-readonly SCRIPT_LOCATION="~/programs/k8s-switcher"
+readonly SCRIPT_LOCATION="~/programs/Kubernetes-Fast-Environment-Switcher"
 readonly PROGRAM_NAME=${0##*/}
 readonly PROGRAM_VERSION="1.0.0"
 readonly EXTERNAL_BINARIES="grep sed "
