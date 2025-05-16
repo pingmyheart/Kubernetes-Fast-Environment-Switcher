@@ -41,7 +41,7 @@ git clone https://github.com/pingmyheart/Kubernetes-Fast-Environment-Switcher.gi
 3. **Make the script accessible**:
 
 ```shell
-sudo ln -s ~/programs/Kubernetes-Fast-Environment-Switcher/k8s-switcher.sh /usr/local/bin/k8s-switcher
+sudo ln -s ~/programs/Kubernetes-Fast-Environment-Switcher/k8s-switcher.bash /usr/local/bin/k8s-switcher
 ```
 
 ## Kubeconfig files location and setup
