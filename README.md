@@ -15,4 +15,4 @@ Copy and Paste of the content of source file into `~/.kube/config` file.
 **It is important to not have spaces between the word in file. Consider using underscores**  
 Below there is a simple demonstration of how the tool works
 
-![alt text](assets/image.png)
+![alt text](assets/command-run.gif)
