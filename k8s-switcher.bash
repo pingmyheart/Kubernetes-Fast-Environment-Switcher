@@ -26,7 +26,6 @@ readonly SCRIPT_LOCATION="~/programs/Kubernetes-Fast-Environment-Switcher"
 readonly PROGRAM_NAME=${0##*/}
 readonly PROGRAM_VERSION="1.0.0"
 readonly EXTERNAL_BINARIES="grep sed "
-readonly EXTERNAL_SOURCES="${SCRIPT_LOCATION}/base-source.sh"
 readonly is_number='^[0-9]+$'
 
 ### Var
@@ -85,18 +84,6 @@ load_libraries() {
   for _ext_bin in $EXTERNAL_BINARIES; do
     if ! hash "$_ext_bin" &>/dev/null; then
       error_exit "Required binary $_ext_bin not found."
-    fi
-  done
-}
-
-load_sources() {
-  for _ext_src in $EXTERNAL_SOURCES; do
-    # shellcheck disable=SC1090
-    if bash $_ext_src --check &>/dev/null; then
-      source $_ext_src
-      echo "Loaded $_ext_src"
-    else
-      error_exit "[$_ext_src] - Check library returned non-zero code"
     fi
   done
 }
@@ -160,9 +147,6 @@ ask_user_permission() {
 
 ### Check binaries
 load_libraries
-
-### Load Sources
-load_sources
 
 ### Parse args
 while [[ -n "$1" ]]; do
