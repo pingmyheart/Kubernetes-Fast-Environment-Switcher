@@ -35,6 +35,7 @@ mkdir -p ~/.kube ~/.programs
 2. **Clone the repository**:
 
 ```shell
+cd ~/.programs
 git clone https://github.com/pingmyheart/Kubernetes-Fast-Environment-Switcher.git
 ```
 
