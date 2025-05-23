@@ -29,13 +29,13 @@ include:
 1. **Make required directories**:
 
 ```shell
-mkdir -p ~/.kube ~/.programs
+mkdir -p ~/.kube ~/programs
 ```
 
 2. **Clone the repository**:
 
 ```shell
-cd ~/.programs
+cd ~/programs
 git clone https://github.com/pingmyheart/Kubernetes-Fast-Environment-Switcher.git
 ```
 
